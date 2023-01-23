@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8dDE1DA1">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="10dp"
+        android:layout_margin="8dp" >
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <ImageView
+                android:id="@+id/postal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:scaleType="centerCrop"
+                android:src="@drawable/download1" />
+
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="97dp"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:text="hola"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/nombreew"
+            android:layout_width="97dp"
+            android:layout_height="60dp"
+            android:text="PARA:"
+            android:textSize="30sp"
+            android:layout_marginLeft="300dp"/>
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="bottom"
+            android:background="#6cFF4141"
+            android:padding="10dp"
+            android:text="FELIZ NAVIDAD"
+            android:textColor="#ffe3e3e3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
